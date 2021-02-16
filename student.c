@@ -5,10 +5,14 @@ int largest(int array[], int length) {
 }
 
 int sum(int array[], int length) {
+
   return -1;
 }
 
 void swap(int *a, int *b) {
+  int temp = *a;
+  *a = *b;
+  *b = temp;
 }
 
 void rotate(int *a, int *b, int *c) {
