@@ -1,12 +1,31 @@
+
 #include "student.h"
 
 int largest(int array[], int length) {
-  return -1;
+  int i;
+  int largest=-10000;
+
+  for (i=0; i < length; i++)
+    {
+      if (array[i] > largest)
+	{
+	  largest = array[i];
+	}
+    
+    }
+
+  return largest;
 }
 
 int sum(int array[], int length) {
-
-  return -1;
+  int i;
+  int sum =0;
+  
+  for (i = 0; i < length; i++)
+    {    
+      sum = sum  + array[i];
+    }
+  return sum;
 }
 
 void swap(int *a, int *b) {
