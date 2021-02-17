@@ -35,6 +35,10 @@ void swap(int *a, int *b) {
 }
 
 void rotate(int *a, int *b, int *c) {
+  int temp = *c;
+  *c = *b;
+  *b = *a;
+  *a = temp;
 }
 
 void sort(int array[], int length) {
