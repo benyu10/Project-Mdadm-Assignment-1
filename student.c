@@ -42,6 +42,18 @@ void rotate(int *a, int *b, int *c) {
 }
 
 void sort(int array[], int length) {
+  int i, n;
+
+  for (i = 0; i < length; i++)
+    {
+      for (n = 0; n < length-1; n++)
+	{
+	  if (array[n] > array[n+1]){
+	      swap (&array[n], &array[n+1]);
+	    }
+	    }
+	 
+    }
 }
 
 void double_primes(int array[], int length) {
