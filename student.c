@@ -79,4 +79,45 @@ void double_primes(int array[], int length) {
 }
 
 void negate_armstrongs(int array[], int length) {
+  int ex();
+   //to keep count of digits
+  for (int i = 0; i < length; i++)
+    {
+      int armstrong=0;
+      int n=0;
+      int counter =0;
+      int temp = array[i];
+      
+      while(temp!=0)
+	{
+	  temp = temp/10;
+	  counter++;
+	}
+      int num = array[i];
+      if (num!=0){
+	while (num!=0)
+	  {
+	    n  = num % 10;
+	    armstrong = armstrong + ex(n, counter);
+	    num = num /10;	  
+	  }
+      
+      if (array[i]> 0 && array[i] == armstrong)
+	{
+	  array[i] = array[i] * -1;
+	}
+      }
+    }   
+}
+
+int ex(int x, int n)
+{
+ 
+  int number = 1;
+  
+  for (int j=1; j <= n; j++)
+    {
+      number = number *x;
+    }
+  return number;
 }
