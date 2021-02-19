@@ -57,6 +57,25 @@ void sort(int array[], int length) {
 }
 
 void double_primes(int array[], int length) {
+  int i = 0;
+  for (i=0; i < length; i++)
+    {
+      if (((array[i]%3) != 0) && array[i] > 1)
+	{
+	  if (array[i] == 2)
+	    {
+	      array[i] = array[i]*2;
+	    }
+	  
+	    
+	  else if( (array[i] %2) != 0)
+	    {
+	      array[i] = array[i] *2; 
+	    }
+	  
+	  
+	}
+    }
 }
 
 void negate_armstrongs(int array[], int length) {
